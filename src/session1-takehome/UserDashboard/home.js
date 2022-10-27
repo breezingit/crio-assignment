@@ -16,6 +16,9 @@ function Home() {
     if (res[0]) {
       setData(res);
       setImage(res[2]);
+    } else {
+      setImage(url);
+      setData(["", ""]);
     }
   };
 
